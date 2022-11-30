@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
         }
         load.setOnClickListener {
             sharedPref = SharedPref(this)
-            counter.text = sharedPref.getValueInt("counter")
+            counter.text = sharedPref.getValueInt("counter").toString()
             root.setBackgroundColor(sharedPref.getValueInt("color"))
         }
 
