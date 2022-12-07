@@ -1,10 +1,9 @@
-package com.example.internalstorage
+package com.example.tpStorage
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 
@@ -67,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         }
         save.setOnClickListener {
             sharedPref = SharedPref(this)
-            sharedPref.save("counter",counter.text.toString())
+            sharedPref.save("counter",counter.text.toString().toInt())
             sharedPref.save("color",color)
         }
         clear.setOnClickListener {

@@ -1,4 +1,4 @@
-package com.example.internalstorage
+package com.example.tpStorage
 
 import android.content.Context
 import android.content.SharedPreferences
